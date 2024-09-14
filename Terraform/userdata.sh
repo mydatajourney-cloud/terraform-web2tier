@@ -1,7 +1,7 @@
 #!/bin/bash
 # Connect to RDS instance using the endpoint
-mysql -h '${aws_db_instance.mysql-rds.endpoint}' -u admin -p'Lolaboba123$' -e "CREATE DATABASE IF NOT EXISTS web_2_tier; exit;"
-mysql -h '${aws_db_instance.mysql-rds.endpoint}' -u admin -p'Lolaboba123$' -e "CREATE DATABASE IF NOT EXISTS web_3_tier; exit;"
+mysql -h '${aws_db_instance.mysql-rds.endpoint}' -u admin -p'yourpass' -e "CREATE DATABASE IF NOT EXISTS web_2_tier; exit;"
+mysql -h '${aws_db_instance.mysql-rds.endpoint}' -u admin -p'yourpass' -e "CREATE DATABASE IF NOT EXISTS web_3_tier; exit;"
 cd /var/www
 cd inc
 cat <<EOL > dbinfo.inc
