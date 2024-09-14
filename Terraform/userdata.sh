@@ -8,7 +8,7 @@ cat <<EOL > dbinfo.inc
 <?php
 define('DB_SERVER','${aws_db_instance.mysql-rds.endpoint}');
 define('DB_USERNAME', 'admin');
-define('DB_PASSWORD', 'Lolaboba123$');
+define('DB_PASSWORD', 'yourpass');
 define('DB_DATABASE', 'db_web_2_tier');
 ?>
 EOL
